@@ -1,0 +1,7 @@
+/* header.css */
+.royal-lines {
+    background-color: var(--royal-linear-gradient-shodow-color);
+    width: 100%;
+    height: 50px;
+}
+  

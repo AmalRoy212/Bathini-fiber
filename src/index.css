@@ -2,22 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  scrollbar-width: thin;
+/* src/globals.css */
+
+:root {
+  --primary-color: #000000;
+  
+  --royal-primary-color: #C2A378;
+  --royal-secondary-mid-color: #D1BA97;
+  --royal-secondary-last-color: #978E82;
+
+  --royal-linear-gradient-shodow-color: linear-gradient(to bottom, #71695e, #D1BA97, #C2A378 );
+
+  --font-family: "Arial", sans-serif;
 }
 
-*::-webkit-scrollbar {
-  @apply bg-transparent w-2;
-}
-
-*::-webkit-scrollbar-thumb {
-  @apply bg-secondary-dark rounded-full;
-}
-
-.scrollbar-hidden::-webkit-scrollbar-thumb {
-  @apply bg-transparent;
-}
-
-.scrollbar-hidden:hover::-webkit-scrollbar-thumb {
-  @apply bg-secondary-border;
+body {
+  background-color: var(--primary-color);
+  color: var(--royal-primary-color);
+  font-family: var(--font-family);
 }
